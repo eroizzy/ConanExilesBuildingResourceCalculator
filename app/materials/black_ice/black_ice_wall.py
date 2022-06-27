@@ -1,8 +1,8 @@
-from ..material import material
-from ..helpers import material_dict
-from .black_ice import black_ice
-from ..woods.insulated_wood import insulated_wood
-from ..blacksmith.steel_reinforcement import steel_reinforcement
+from .. import material
+from .. import material_dict
+from . import black_ice
+from ..woods import insulated_wood
+from ..blacksmith import steel_reinforcement
 
 
 class black_ice_wall(material):

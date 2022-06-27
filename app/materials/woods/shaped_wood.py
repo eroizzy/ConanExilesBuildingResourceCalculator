@@ -1,6 +1,6 @@
-from ..material import material
-from ..helpers import material_dict
-from .wood import wood
+from .. import material
+from ..import material_dict
+from . import wood
 
 
 class shaped_wood(material):

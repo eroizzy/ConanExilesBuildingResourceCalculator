@@ -1,6 +1,6 @@
-from ..material import material
-from ..helpers import material_dict
-from ..metals.steel_bar import steel_bar
+from .. import material
+from .. import material_dict
+from ..metals import steel_bar
 
 
 class steel_reinforcement(material):

@@ -1,7 +1,8 @@
-from ..material import material
-from ..helpers import material_dict
-from .dry_wood import dry_wood
-from .resin import resin
+from .. import material
+from .. import material_dict
+
+from . import dry_wood
+from . import resin
 
 
 class insulated_wood(material):

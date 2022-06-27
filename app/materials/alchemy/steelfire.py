@@ -1,6 +1,6 @@
-from ..material import material
-from ..helpers import material_dict
 from . import tar
+from .. import material
+from .. import material_dict
 from ..stones import brimstone
 
 

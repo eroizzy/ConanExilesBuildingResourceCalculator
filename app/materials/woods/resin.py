@@ -1,4 +1,4 @@
-from ..material import material
+from .. import material
 
 
 class resin(material):

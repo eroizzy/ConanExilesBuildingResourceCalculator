@@ -1,5 +1,6 @@
-from ..material import material
-from ..helpers import material_dict
+from .. import material
+from .. import material_dict
+
 from . import black_ice
 from ..woods import insulated_wood
 from ..blacksmith import steel_reinforcement

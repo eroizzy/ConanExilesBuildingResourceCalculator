@@ -1,5 +1,5 @@
-from ..material import material
-from ..helpers import material_dict
+from .. import material, material_dict
+
 from . import iron_bar
 from ..alchemy import steelfire
 
@@ -13,6 +13,6 @@ class steel_bar(material):
 
     def get_needed_material(self) -> list[material_dict]:
         ret: list[material_dict] = []
-        ret.append(material_dict(mat=steelfire, qty=1))
-        ret.append(material_dict(mat=iron_bar, qty=5))
+        ret.append(material_dict(mat=steelfire(), qty=1))
+        ret.append(material_dict(mat=iron_bar(), qty=5))
         return ret

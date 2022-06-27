@@ -1,4 +1,4 @@
-from app.materials import material
+from materials.material import material
 from typing import TypedDict
 
 

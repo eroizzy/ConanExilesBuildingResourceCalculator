@@ -1,1 +1,1 @@
-from .brimstone import brimstone
+from materials.stones.brimstone import brimstone
