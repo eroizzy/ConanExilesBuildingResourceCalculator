@@ -1,7 +1,2 @@
-from materials.material import material
-from typing import TypedDict
-
-
-class material_dict(TypedDict):
-    mat: material
-    qty: int
+from materials.material import Material
+from materials.base_material import BaseMaterial

@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 
-class material(object):
+class Material(object):
     def __init__(self, name: str, base_material: bool = False) -> None:
         self._name = name
         self.base_material = base_material
