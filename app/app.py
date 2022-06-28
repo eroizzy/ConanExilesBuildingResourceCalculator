@@ -1,14 +1,12 @@
+from materials import *
 
 
-
-from materials import Material
-
-class test():
+class test:
     def print_resource_tree(self) -> None:
         pass
-    
+
     def test(self):
-        print("Hello World")
+        print(BaseMaterial("Ironstone"))
         pass
 
 
