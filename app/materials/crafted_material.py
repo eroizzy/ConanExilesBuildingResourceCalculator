@@ -1,4 +1,5 @@
-from . import Material, Ingredient
+from app.materials.material import Material
+from app.materials.ingredients import Ingredient
 
 
 class CraftedMaterial(Material):

@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 
-class Material(object):
+class Material:
     def __init__(self, name: str, base_material: bool = False) -> None:
         self._name = name
         self.base_material = base_material
@@ -18,7 +18,7 @@ class Material(object):
         return self.base_material
 
     @abstractmethod
-    def get_ingrediant_list(self) -> list[object]:
+    def get_ingredient_list(self) -> list[object]:
         pass
 
     def __str__(self) -> str:

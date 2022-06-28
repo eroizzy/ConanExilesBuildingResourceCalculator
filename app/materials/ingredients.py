@@ -1,7 +1,7 @@
 from . import Material
 
 
-class Ingredient(object):
+class Ingredient:
     def __init__(self, material: Material, qty: int) -> None:
         self._material = material
         self._qty = qty
