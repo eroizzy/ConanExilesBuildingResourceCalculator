@@ -1,4 +1,4 @@
-from materials import *
+from materials import BaseMaterial
 
 
 class test:
