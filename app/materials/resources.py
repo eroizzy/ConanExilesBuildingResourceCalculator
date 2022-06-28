@@ -18,6 +18,7 @@ class BaseMaterials(Enum):
 
 class CraftedMaterials(Enum):
     BLACK_ICE_FOUNDATION = "black_ice_foundation"
+    INSULATED_WOOD = "Insulated Wood"
     IRON_BAR = "Iron Bar"
     IRON_REINFORCEMENT = "Iron Reinforcement"
     STEEL_BAR = "Steel Bar"
@@ -33,6 +34,18 @@ res: dict = {
     BaseMaterials.STONE: {"base_material": True},
     BaseMaterials.TAR: {"base_material": True},
     BaseMaterials.WOOD: {"base_material": True},
+    CraftedMaterials.BLACK_ICE_FOUNDATION: {
+        "base_material": False,
+        "ingredients": {
+            BaseMaterials.BLACK_ICE: 3,
+            CraftedMaterials.STEEL_REINFORCEMENT: 3,
+            CraftedMaterials.INSULATED_WOOD: 6,
+        },
+    },
+    CraftedMaterials.INSULATED_WOOD: {
+        "base_material": False,
+        "ingredients": {BaseMaterials.DRY_WOOD: 1, BaseMaterials.RESIN: 1},
+    },
     CraftedMaterials.IRON_BAR: {
         "base_material": False,
         "ingredients": {BaseMaterials.IRONSTONE: 2},
@@ -57,16 +70,3 @@ res: dict = {
         "ingredients": {BaseMaterials.TAR: 2, BaseMaterials.BRIMSTONE: 1},
     },
 }
-
-
-# resource: dict = {
-#     "black_ice": BaseMaterial(name="Black Ice"),
-
-#     "black_ice_foundation": CraftedMaterial(
-#         "Black Ice Foundatoin",
-#         ingredient_list=[
-#             Ingredient(material=resource[base_materials.BLACK_ICE], qty=15),
-#             Ingredient(material=, qty=8)
-#         ]
-#     )
-# }
