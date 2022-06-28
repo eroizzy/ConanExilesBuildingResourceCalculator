@@ -18,7 +18,7 @@ class Material(object):
         return self.base_material
 
     @abstractmethod
-    def get_needed_material(self) -> list[object]:
+    def get_ingrediant_list(self) -> list[object]:
         pass
 
     def __str__(self) -> str:
