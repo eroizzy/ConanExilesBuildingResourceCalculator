@@ -30,7 +30,7 @@ class CraftedMaterials(Enum):
     STEELFIRE = "Steelfire"
 
 
-res: dict = {
+resources: dict = {
     BaseMaterials.BRIMSTONE: {"base_material": True},
     BaseMaterials.DRY_WOOD: {"base_material": True},
     BaseMaterials.IRONSTONE: {"base_material": True},
