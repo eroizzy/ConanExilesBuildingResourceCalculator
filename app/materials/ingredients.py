@@ -1,4 +1,4 @@
-from . import Material
+from app.materials.material import Material
 
 
 class Ingredient:
