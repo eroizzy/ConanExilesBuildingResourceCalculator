@@ -17,7 +17,11 @@ class BaseMaterials(Enum):
 
 
 class CraftedMaterials(Enum):
-    BLACK_ICE_FOUNDATION = "black_ice_foundation"
+    BLACK_ICE_CEILING = "Black Ice-Reinforced Wooden Ceiling"
+    BLACK_ICE_DOOR = "Black Ice-Reinforced Wooden Door"
+    BLACK_ICE_DOORFRAME = "Black Ice-Reinforced Wooden Doorframe"
+    BLACK_ICE_FOUNDATION = "Black Ice-Reinforced Wooden Foundation"
+    BLACK_ICE_WALL = "Black Ice-Reinforced Wooden Wall"
     INSULATED_WOOD = "Insulated Wood"
     IRON_BAR = "Iron Bar"
     IRON_REINFORCEMENT = "Iron Reinforcement"
@@ -34,12 +38,44 @@ res: dict = {
     BaseMaterials.STONE: {"base_material": True},
     BaseMaterials.TAR: {"base_material": True},
     BaseMaterials.WOOD: {"base_material": True},
+    CraftedMaterials.BLACK_ICE_CEILING: {
+        "base_material": False,
+        "ingredients": {
+            BaseMaterials.BLACK_ICE: 9,
+            CraftedMaterials.STEEL_REINFORCEMENT: 2,
+            CraftedMaterials.INSULATED_WOOD: 4,
+        },
+    },
+    CraftedMaterials.BLACK_ICE_DOOR: {
+        "base_material": False,
+        "ingredients": {
+            BaseMaterials.BLACK_ICE: 15,
+            CraftedMaterials.STEEL_REINFORCEMENT: 3,
+            CraftedMaterials.INSULATED_WOOD: 6,
+        },
+    },
+    CraftedMaterials.BLACK_ICE_DOORFRAME: {
+        "base_material": False,
+        "ingredients": {
+            BaseMaterials.BLACK_ICE: 8,
+            CraftedMaterials.STEEL_REINFORCEMENT: 2,
+            CraftedMaterials.INSULATED_WOOD: 3,
+        },
+    },
     CraftedMaterials.BLACK_ICE_FOUNDATION: {
         "base_material": False,
         "ingredients": {
-            BaseMaterials.BLACK_ICE: 3,
+            BaseMaterials.BLACK_ICE: 15,
             CraftedMaterials.STEEL_REINFORCEMENT: 3,
             CraftedMaterials.INSULATED_WOOD: 6,
+        },
+    },
+    CraftedMaterials.BLACK_ICE_WALL: {
+        "base_material": False,
+        "ingredients": {
+            BaseMaterials.BLACK_ICE: 8,
+            CraftedMaterials.STEEL_REINFORCEMENT: 2,
+            CraftedMaterials.INSULATED_WOOD: 3,
         },
     },
     CraftedMaterials.INSULATED_WOOD: {
